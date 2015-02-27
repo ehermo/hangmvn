@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hangman Game</title>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/game.js" ></script>
+<link rel="stylesheet" type="text/css" href="css/hangman.css"/>
+</head>
+<body>
+<div id="gameover" hidden="true" class="big"><h1>GAME OVER</h1></div>
+<div id="win" hidden="true" class="big"><h1>YOU WIN!!!</h1></div>
+<div id="introduction" class="big"><h1>Let's play!!!</h1>
+<button id="start" class="big" type="submit">Play</button>
+</div>
+
+<div id="loading" class="big" hidden="true"><h1>Loading...</h1>
+</div>
+
+<div id="gameboard" hidden="true" >
+<form id="formhangman">
+<table>
+<tr><td>
+<table class="gridtable" width="100%">
+<tr><th>Game ID:</th><td id="id"></td></tr>
+<tr><th>Game status:</th><td id="status"></td></tr>
+<tr><th>Remaining moves:</th><td id="rmoves"></td></tr>
+</table>
+</td></tr>
+<tr><td>
+<table class="gridtable" width="100%">
+<tr><th>Used letters</th></tr>
+<tr><td id="usedLetters" align="center" ></td></tr>
+<tr><th>Playing word</th></tr>
+<tr><td id="playingWord" class="med" align="center"></td></tr>
+</table>
+</td></tr>
+<tr><td>
+<table class="gridtable" width="100%">
+<tr><th>Pick a letter</th></tr>
+<tr><td>
+<input id="letterA" type="radio" name="letter" value="A" class="enabled">A
+<input id="letterB" type="radio" name="letter" value="B" class="enabled">B
+<input id="letterC" type="radio" name="letter" value="C" class="enabled">C
+<input id="letterD" type="radio" name="letter" value="D" class="enabled">D
+<input id="letterE" type="radio" name="letter" value="E" class="enabled">E
+<input id="letterF" type="radio" name="letter" value="F" class="enabled">F
+<input id="letterG" type="radio" name="letter" value="G" class="enabled">G
+<input id="letterH" type="radio" name="letter" value="H" class="enabled">H
+<input id="letterI" type="radio" name="letter" value="I" class="enabled">I
+<input id="letterJ" type="radio" name="letter" value="J" class="enabled">J
+<input id="letterK" type="radio" name="letter" value="K" class="enabled">K
+<input id="letterL" type="radio" name="letter" value="L" class="enabled">L
+<input id="letterM" type="radio" name="letter" value="M" class="enabled">M
+</td></tr>
+<tr><td>
+<input id="letterN" type="radio" name="letter" value="N" class="enabled">N
+<input id="letterO" type="radio" name="letter" value="O" class="enabled">O
+<input id="letterO" type="radio" name="letter" value="P" class="enabled">P
+<input id="letterQ" type="radio" name="letter" value="Q" class="enabled">Q
+<input id="letterR" type="radio" name="letter" value="R" class="enabled">R
+<input id="letterS" type="radio" name="letter" value="S" class="enabled">S
+<input id="letterT" type="radio" name="letter" value="T" class="enabled">T
+<input id="letterU" type="radio" name="letter" value="U" class="enabled">U
+<input id="letterV" type="radio" name="letter" value="V" class="enabled">V
+<input id="letterW" type="radio" name="letter" value="W" class="enabled">W
+<input id="letterX" type="radio" name="letter" value="X" class="enabled">X
+<input id="letterY" type="radio" name="letter" value="Y" class="enabled">Y
+<input id="letterZ" type="radio" name="letter" value="Z" class="enabled">Z
+</td></tr>
+</table>
+</td></tr>
+</table>
+<br>
+<button id="playLetter" name="playLetter" type="submit" class="big">Play Letter</button>
+</form>
+</div>
+
+</body>
+</html>
